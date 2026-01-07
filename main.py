@@ -53,6 +53,8 @@ If the answer is not in the document, say you don't know.
 
 def gen_lizard():
     num = random.randint(1,13)
+    if num == 7:
+        num = 2
     st.image(f"lizard{num}.jpg")
 def get_answer(text,name):
   return (get_completion(f"answer the quesion{text}",name))
@@ -67,7 +69,7 @@ with col2:
     st.write("**You love lizards, don't you?**")
     submitted2 = st.button('**The above information is false.**')
     if submitted2:
-      st.error("How dare you?!")
+      st.error("Re-rollng...")
     choice = st.selectbox('Talk to:', ['Lizard', 'Lizard lover',"WARIO"])
     if choice == "WARIO":
       st.image("WAAAAAAAAAAAAAAAAAAAAAA.png","WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
