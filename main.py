@@ -1,5 +1,5 @@
 # @title Create main.py
-%%writefile main.py
+
 from openai import OpenAI
 import streamlit as st
 from getpass import getpass
