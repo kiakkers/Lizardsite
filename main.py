@@ -27,7 +27,7 @@ for page in pages:
 from google.colab import userdata
 token = userdata.get('github_token') # Remember to fill this up in the Secrets tab in Google Colab
 pdf_text = "\n\n".join([page.page_content for page in pages])
-client = st.secrets["OPENAI_API_KEY"]
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 def get_completion(user_prompt, persona, model="gpt-4o-mini"):
     system_prompt = f"""
 You are roleplaying as: {persona}
