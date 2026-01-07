@@ -52,7 +52,7 @@ If the answer is not in the document, say you don't know.
     return response.choices[0].message.content
 choice = ""
 def gen_lizard():
-    if choice != "WARIO"
+    if choice != "WARIO":
         num = random.randint(1,13)
         if num == 7:
             num = 2
