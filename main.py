@@ -67,7 +67,8 @@ if choice == "WARIO":
 gen = st.button('**New lizard picture**')
 if gen:
   num = random.randint(1,13)
-  st.image(f"/content/lizard{num}.jpg","this is a lizard.")
+  st.image(f"lizard{num}.jpg", caption="this is a lizard.")
+
 
 name = st.text_input('Ask away!', 'question here')
 submitted = st.button('**Ask**')
