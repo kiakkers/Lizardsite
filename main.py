@@ -63,9 +63,10 @@ def get_answer(text,name):
   return (get_completion(f"answer the quesion{text}",name))
 col1, col2, col3 = st.columns(3)
 with col1:
-    gen_lizard()
-    gen_lizard()
-    gen_lizard()
+    if choice:
+        gen_lizard()
+        gen_lizard()
+        gen_lizard()
 with col2:
     st.title('**VERY COOL LIZARD WEBSITE!!!**')                              #Webpage starts here!
 
@@ -86,6 +87,7 @@ with col2:
       st.error("Re-rollng...")
 
 with col3:
-    gen_lizard()
-    gen_lizard()
-    gen_lizard()
+    if choice:
+        gen_lizard()
+        gen_lizard()
+        gen_lizard()
