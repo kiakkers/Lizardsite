@@ -71,4 +71,4 @@ if gen:
 
 name = st.chat_input("ask about lizards here")
 if name:
-  st.write(get_answer(query,choice))
+  st.write(get_answer(name,choice))
