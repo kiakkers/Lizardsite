@@ -66,10 +66,7 @@ with col1:
 with col2:
     st.title('**VERY COOL LIZARD WEBSITE!!!**')                              #Webpage starts here!
 
-    st.write("**Reroll lizards**")
-    submitted2 = st.button('**The above information is false.**')
-    if submitted2:
-      st.error("Re-rollng...")
+    st.write("**Talk to the chatbots about lizards!**")
     choice = st.selectbox('Talk to:', ['Lizard', 'Lizard lover',"WARIO"])
     if choice == "WARIO":
       st.image("WAAAAAAAAAAAAAAAAAAAAAA.png","WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
@@ -81,6 +78,9 @@ with col2:
     if name:
       st.write(get_answer(name,choice))
     
+    submitted2 = st.button('**Re-roll lizards**')
+    if submitted2:
+      st.error("Re-rollng...")
 
 with col3:
     gen_lizard()
