@@ -54,7 +54,7 @@ If the answer is not in the document, say you don't know.
 
 def get_answer(text,name):
   return (get_completion(f"answer the quesion{text}",name))
-
+col1, col2, col3 = st.columns(3)
 with col1:
     st.write("Lizards :D")
     st.image("WAAAAAAAAAAAAAAAAAAAAAA.png")
