@@ -62,7 +62,7 @@ if submitted2:
   st.error("How dare you?!")
 choice = st.selectbox('Talk to:', ['Lizard', 'Lizard lover',"WARIO"])
 if choice == "WARIO":
-  st.image("/content/WAAAAAAAAAAAAAAAAAAAAAA.png","WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+  st.image("WAAAAAAAAAAAAAAAAAAAAAA.png","WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
   st.title('**VERY COOL WARIO WEBSITE**')
 gen = st.button('**New lizard picture**')
 if gen:
