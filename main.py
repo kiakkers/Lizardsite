@@ -69,7 +69,7 @@ if gen:
   st.image(f"lizard{num}.jpg", caption="this is a lizard.")
 
 
-name = st.chat_input(placeholder="ask about lizards here", *, key=None, max_chars=None, accept_file=False, file_type=None, accept_audio=False, audio_sample_rate=16000, disabled=False, on_submit=None, args=None, kwargs=None, width="stretch")
+name = st.chat_input(placeholder="ask about lizards here")
 submitted = st.button('**Ask**')
 if submitted:
   st.write(get_answer(name,choice))
