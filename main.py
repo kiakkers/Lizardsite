@@ -50,12 +50,15 @@ If the answer is not in the document, say you don't know.
     )
 
     return response.choices[0].message.content
-
+choice = ""
 def gen_lizard():
-    num = random.randint(1,13)
-    if num == 7:
-        num = 2
-    st.image(f"lizard{num}.jpg")
+    if choice != "WARIO"
+        num = random.randint(1,13)
+        if num == 7:
+            num = 2
+        st.image(f"lizard{num}.jpg")
+    else:
+        st.image("WAAAAAAAAAAAAAAAAAAAAAA.png","WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
 def get_answer(text,name):
   return (get_completion(f"answer the quesion{text}",name))
 col1, col2, col3 = st.columns(3)
