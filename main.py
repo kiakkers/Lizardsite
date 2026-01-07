@@ -66,7 +66,7 @@ with col1:
 with col2:
     st.title('**VERY COOL LIZARD WEBSITE!!!**')                              #Webpage starts here!
 
-    st.write("**You love lizards, don't you?**")
+    st.write("**Reroll lizards**")
     submitted2 = st.button('**The above information is false.**')
     if submitted2:
       st.error("Re-rollng...")
