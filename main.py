@@ -54,23 +54,32 @@ If the answer is not in the document, say you don't know.
 
 def get_answer(text,name):
   return (get_completion(f"answer the quesion{text}",name))
-st.title('**VERY COOL LIZARD WEBSITE!!!**')
-with st.sidebar:
+
+with col1:
+    st.write("Lizards :D")
     st.image("WAAAAAAAAAAAAAAAAAAAAAA.png")
-st.write("**You love lizards, don't you?**")
-submitted2 = st.button('**The above information is false.**')
-if submitted2:
-  st.error("How dare you?!")
-choice = st.selectbox('Talk to:', ['Lizard', 'Lizard lover',"WARIO"])
-if choice == "WARIO":
-  st.image("WAAAAAAAAAAAAAAAAAAAAAA.png","WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
-  st.title('**VERY COOL WARIO WEBSITE**')
-gen = st.button('**New lizard picture**')
-if gen:
-  num = random.randint(1,13)
-  st.image(f"lizard{num}.jpg", caption="this is a lizard.")
+with col2:
+    st.title('**VERY COOL LIZARD WEBSITE!!!**')                              #Webpage starts here!
 
+    st.write("**You love lizards, don't you?**")
+    submitted2 = st.button('**The above information is false.**')
+    if submitted2:
+      st.error("How dare you?!")
+    choice = st.selectbox('Talk to:', ['Lizard', 'Lizard lover',"WARIO"])
+    if choice == "WARIO":
+      st.image("WAAAAAAAAAAAAAAAAAAAAAA.png","WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+      st.title('**VERY COOL WARIO WEBSITE**')
+    gen = st.button('**New lizard picture**')
+    if gen:
+      num = random.randint(1,13)
+      st.image(f"lizard{num}.jpg", caption="this is a lizard.")
+    
+    
+    name = st.chat_input("ask about lizards here")
+    if name:
+      st.write(get_answer(name,choice))
+    
 
-name = st.chat_input("ask about lizards here")
-if name:
-  st.write(get_answer(name,choice))
+with col3:
+    st.write("Lizards :D")
+    st.image("WAAAAAAAAAAAAAAAAAAAAAA.png")
