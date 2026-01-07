@@ -55,6 +55,8 @@ If the answer is not in the document, say you don't know.
 def get_answer(text,name):
   return (get_completion(f"answer the quesion{text}",name))
 st.title('**VERY COOL LIZARD WEBSITE!!!**')
+with st.sidebar:
+    st.image("WAAAAAAAAAAAAAAAAAAAAAA.png")
 st.write("**You love lizards, don't you?**")
 submitted2 = st.button('**The above information is false.**')
 if submitted2:
