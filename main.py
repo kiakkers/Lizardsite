@@ -24,7 +24,7 @@ for page in pages:
 
 # Sum the token counts from all pages
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="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")
 pdf_text = "\n\n".join([page.page_content for page in pages])
 
 def get_completion(user_prompt, persona, model="gpt-4o-mini"):
