@@ -5,3 +5,6 @@ requests
 streamlit
 openai
 tiktoken
+langchain-community
+pypdf
+tiktoken
