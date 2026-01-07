@@ -61,12 +61,8 @@ def gen_lizard():
         st.image("WAAAAAAAAAAAAAAAAAAAAAA.png","WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
 def get_answer(text,name):
   return (get_completion(f"answer the quesion{text}",name))
-col1, col2, col3 = st.columns(3)
-with col1:
-    if choice:
-        gen_lizard()
-        gen_lizard()
-        gen_lizard()
+col2, col3 = st.columns(2)
+
 with col2:
     st.title('**VERY COOL LIZARD WEBSITE!!!**')                              #Webpage starts here!
 
