@@ -51,13 +51,16 @@ If the answer is not in the document, say you don't know.
 
     return response.choices[0].message.content
 
-
+def gen_lizard():
+    num = random.randint(1,13)
+    st.image("lizard{num}.jpg")
 def get_answer(text,name):
   return (get_completion(f"answer the quesion{text}",name))
 col1, col2, col3 = st.columns(3)
 with col1:
-    st.write("Lizards :D")
-    st.image("WAAAAAAAAAAAAAAAAAAAAAA.png")
+    gen_lizard()
+    gen_lizard()
+    gen_lizard()
 with col2:
     st.title('**VERY COOL LIZARD WEBSITE!!!**')                              #Webpage starts here!
 
@@ -69,10 +72,7 @@ with col2:
     if choice == "WARIO":
       st.image("WAAAAAAAAAAAAAAAAAAAAAA.png","WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
       st.title('**VERY COOL WARIO WEBSITE**')
-    gen = st.button('**New lizard picture**')
-    if gen:
-      num = random.randint(1,13)
-      st.image(f"lizard{num}.jpg", caption="this is a lizard.")
+
     
     
     name = st.chat_input("ask about lizards here")
@@ -81,5 +81,6 @@ with col2:
     
 
 with col3:
-    st.write("Lizards :D")
-    st.image("WAAAAAAAAAAAAAAAAAAAAAA.png")
+    gen_lizard()
+    gen_lizard()
+    gen_lizard()
