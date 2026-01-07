@@ -53,7 +53,7 @@ If the answer is not in the document, say you don't know.
 
 def gen_lizard():
     num = random.randint(1,13)
-    st.image("lizard{num}.jpg")
+    st.image(f"lizard{num}.jpg")
 def get_answer(text,name):
   return (get_completion(f"answer the quesion{text}",name))
 col1, col2, col3 = st.columns(3)
