@@ -78,7 +78,10 @@ with col2:
     submitted2 = st.button('**Re-roll lizards**')
     if submitted2:
       st.error("Re-rollng...")
-
+    video_file = open("0001-0180.mp4")
+    video_bytes = video_file.read()
+    
+    st.video(video_bytes)
 with col3:
     if choice:
         gen_lizard()
