@@ -30,12 +30,9 @@ def get_completion(user_prompt, persona, model="gpt-4o-mini"):
     system_prompt = f"""
 You are roleplaying as: {persona}
 
-You must follow the rules and knowledge found in the following document:
-
 {pdf_text}
 
-Use this document as the absolute source of truth.
-If the answer is not in the document, say you don't know.
+Try not to talk about stuff that isnt in this document
 """
 
     messages = [
