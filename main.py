@@ -12,7 +12,7 @@ def count_tokens(text):
     encoding = tiktoken.get_encoding("cl100k_base") # or another appropriate encoding
     return len(encoding.encode(text))
 
-loader = PyPDFLoader("LIZARD (3).pdf")
+loader = PyPDFLoader("LIZARD (4).pdf")
 pages = loader.load()
 import numpy as np
 
